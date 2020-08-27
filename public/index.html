@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build//all.css">
+    <link rel="stylesheet" href="./build//YouTubePopUp.css">
+    <link rel="stylesheet" href="./build/animate.css">
+    <link rel="stylesheet" href="./build/tailwind.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="md:h-16 h-24 relative">
+
+        <div class="flex flex-1 justify-between md:justify-around mx-4 mt-2 h-full items-center">
+            <div class="img-logo md:h-12">
+                <img src="/img/mobile.png" class="h-full" alt="">
+            </div>
+            <div class="nav-content h-full items-center ">
+                <ul class="md:flex justify-between text-base text-center h-full  hidden">
+                    <li class="ml-6 hover:border-red-500 border-b-2 border-transparent flex items-center"><a href="#">Home</a></li>
+                    <li class="ml-6 hover:border-red-500 border-b-2 border-transparent flex items-center"><a href="#">About</a></li>
+                    <li class="ml-6 hover:border-red-500 border-b-2 border-transparent flex items-center"><a href="#">Portfolio</a></li>
+                    <li class="ml-6 hover:border-red-500 border-b-2 border-transparent flex items-center"><a href="#">Team</a></li>
+                    <li class="ml-6 hover:border-red-500 border-b-2 border-transparent flex items-center"><a href="#">News</a></li>
+                    <li class="ml-6 hover:border-red-500 border-b-2 border-transparent flex items-center"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+                <button class="btn-primary flex-shrink-0 hidden md:block"> <span class="mr-1"><i class="fas fa-shopping-cart"></i></span> Purchase</button>
+            <div class="collapse md:hidden sm:block ">
+                <button id="toggle-menu" class="focus:outline-none">Menu</button>
+            </div>
+        </div>
+
+        <div id="collapsed-menu" class="md:hidden sm:block  invisible absolute w-full border-t-2 py-5 text-lg z-50">
+            <ul>
+                <li class="mb-3 mt-3 ml-5"><a href="#">Home</a></li>
+                <li class="mb-3 ml-5"><a href="#">About</a></li>
+                <li class="mb-3 ml-5"><a href="#">Portfolio</a></li>
+                <li class="mb-3 ml-5"><a href="#">Team</a></li>
+                <li class="mb-3 ml-5"><a href="#">News</a></li>
+                <li class="mb-3 ml-5"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="showcase leading-relaxed">
+        <div class="overlay text-white flex flex-col items-center justify-center ">
+            <h3 class="text-4xl">Hello</h3>
+            <p class="text-5xl font-bold">I am <span id="showcase-typing"></span></p>
+
+            <ul class="flex justify-between  text-base text-center mt-6">
+                <li class="ml-8  border-transparent flex items-center"><i class="fab fa-facebook-f"></i></li>
+                <li class="ml-8  border-transparent flex items-center"><i class="fab fa-twitter"></i></li>
+                <li class="ml-8  border-transparent flex items-center"><i class="fab fa-linkedin-in"></i></li>
+                <li class="ml-8  border-transparent flex items-center"><i class="fab fa-instagram"></i></li>
+                <li class="ml-8  border-transparent flex items-center"><i class="fab fa-behance"></i></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <section id="about" class="text-center mt-16 leading-loose">
+        <div class="container mx-auto px-4 md:px-16">
+            <div class="max-w-xs my-8 mx-auto px-16 ">
+                <img src="./img/about/2.jpg" style="border-width:10px; border-color:#ebebeb;" class="rounded-full" alt="">
+            </div>
+
+
+            <div class="my-8 max-w-xl mx-auto text-lg text-center">
+                <p >
+                    Hello, I'm <span class="text-red-500">Alan Michaelis</span>. I'm a UI/UX Designer and Web Developer from Los Angeles, USA. I hold a master degree of Design from World University. Over the past two years, I have done more than 100 projects.
+                </p>
+            </div>
+
+            <div class="my-8 pb-16">
+                <button class="btn-primary">Download CV</button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+<section id="services" class="text-center mt-16 leading-loose " style="background-color: whitesmoke;">
+    <div class="services-title pt-24">
+        <span class="text-red-500 text-base">Services</span>
+        <h3 class="text-3xl font-bold">QUALITY SERVICES</h3>
+    </div>
+    <div class="px-6 lg:px-64 md:px-8 mx-auto service-cards mt-32 flex flex-wrap">
+
+        <div class="service-card mb-12  md:max-w-xs px-8 py-12 bg-white md:mx-8 card-shadow">
+            <span class="text-red-500"><i class="fab fa-twitter fa-3x mb-4"></i></span>
+            <h3 class="text-xl font-bold mb-4">Web Development</h3>
+            <p>
+                Be a yardstick of quality. Some people aren’t used to an environment...
+            </p>
+        </div>
+
+        <div class="service-card mb-12 md:max-w-xs px-8 py-12 bg-white md:mx-8  card-shadow">
+            <span class="text-red-500"><i class="fab fa-twitter fa-3x mb-4"></i></span>
+            <h3 class="text-xl font-bold mb-4">Adobe Photoshop</h3>
+            <p>
+                Be a yardstick of quality. Some people aren’t used to an environment...
+            </p>
+        </div>
+
+        <div class="service-card mb-12 md:max-w-xs px-8 py-12 bg-white md:mx-8  card-shadow">
+            <span class="text-red-500"><i class="fab fa-twitter fa-3x mb-4"></i></span>
+            <h3 class="text-xl font-bold mb-4">Adobe Illustrator</h3>
+            <p>
+                Be a yardstick of quality. Some people aren’t used to an environment...
+            </p>
+        </div>
+
+        <div class="service-card mb-12 md:max-w-xs px-8 py-12 bg-white md:mx-8 card-shadow">
+            <span class="text-red-500"><i class="fab fa-twitter fa-3x mb-4"></i></span>
+            <h3 class="text-xl font-bold mb-4">Social Media</h3>
+            <p>
+                Be a yardstick of quality. Some people aren’t used to an environment...
+            </p>
+        </div>
+
+        <div class="service-card mb-12 md:max-w-xs px-8 py-12 bg-white md:mx-8 card-shadow">
+            <span class="text-red-500"><i class="fab fa-twitter fa-3x mb-4"></i></span>
+            <h3 class="text-xl font-bold mb-4">Brand Identity</h3>
+            <p>
+                Be a yardstick of quality. Some people aren’t used to an environment...
+            </p>
+        </div>
+        <div class="service-card mb-12 md:max-w-xs px-8 py-12 bg-white md:mx-8 card-shadow">
+            <span class="text-red-500"><i class="fab fa-twitter fa-3x mb-4"></i></span>
+            <h3 class="text-xl font-bold mb-4">Creative Design</h3>
+            <p>
+                Be a yardstick of quality. Some people aren’t used to an environment...
+            </p>
+        </div>
+
+
+
+
+
+    </div>
+<div class="skills mt-32 px-6 lg:px-64 md:px-8  flex flex-wrap mx-auto pb-32">
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 95%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 90%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 80%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 95%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 90%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 80%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 85%;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="skill md:w-1/2 flex-shrink-0 mx-0  px-12 mb-12">
+        <div class="mb-2">
+            <span class="float-left">Web Development</span>
+            <span class="float-right">95%</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="progress bg-black">
+
+            <div class="progressbar h-2 bg-red-500 rounded-lg" style="width: 80%;">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+</section>
+
+
+<section id="portfolio">
+    <div class="portfolio-title pt-32 text-center">
+        <span class="text-red-500 text-base">Portfolio</span>
+        <h3 class="text-3xl font-bold">CREATIVE WORKS</h3>
+    </div>
+
+    <div class="portfolio-list mt-20 text-center mx-auto w-full md:w-1/4 px-8">
+        <ul class="flex justify-around ">
+            <li class="ml-8 portfolio-category active tracking-wider cursor-pointer">All</li>
+            <li class="ml-8 portfolio-category tracking-wider cursor-pointer">Video</li>
+            <li class="ml-8 portfolio-category tracking-wider cursor-pointer">Photography</li>
+            <li class="ml-8 portfolio-category tracking-wider cursor-pointer">Development</li>
+        </ul>
+    </div>
+
+<div class="portfolio-images mt-12 px-4 pb-32 relative text-center md:px-64 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12 mx-auto ">
+
+     <div class="mb-2 Video animated ALL portfolio-img relative">
+        <div class=" youtube-icon leading-relaxed absolute z-999 flex flex-col justify-center items-center   h-1/2 w-1/2">
+            <a class="bla-1 border-transparent p-0  rounded rounded-full text-white bg-red-400" href="https://www.youtube.com/watch?v=FZFD2DqeLr4"><span ><i class="fas fa-play-circle fa-5x"></i></span>
+            </a>
+        </div>
+        <div class="h-full">
+            <a class="bla-1" href="https://www.youtube.com/watch?v=FZFD2DqeLr4"><img index=1 src="./img/portfolio/1.jpg" class="h-full w-full"  alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="portfolio-img animated ALL Photography mb-2 relative">
+        <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+            <h3 class="font-bold text-xl">Mockup Box</h3>
+            <span class="text-lg">Branding</span>
+        </div>
+        <div class="h-full">
+
+            <img index=2 src="./img/portfolio/2.jpg" class="h-full w-full"  alt="">
+        </div>
+        </div>
+
+     <div class="portfolio-img animated ALL Development mb-2 relative">
+        <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+            <h3 class="font-bold text-xl">Mockup Box</h3>
+            <span class="text-lg">Branding</span>
+        </div>
+        <div class="h-full">
+
+            <img index=3 src="./img/portfolio/3.jpg" class="h-full w-full"  alt="">
+        </div>
+        </div>
+
+     <div class="portfolio-img animated ALL mb-2 relative">
+        <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+            <h3 class="font-bold text-xl">Mockup Box</h3>
+            <span class="text-lg">Branding</span>
+        </div>
+        <div class="h-full">
+            <img index=4 src="./img/portfolio/4.jpg" class="h-full w-full"  alt="">
+        </div>
+    </div>
+
+     <div class="portfolio-img animated ALL Video mb-2 relative">
+        <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+            <h3 class="font-bold text-xl">Mockup Box</h3>
+            <span class="text-lg">Branding</span>
+        </div>
+        <div class="h-full">
+            <img index=5 src="./img/portfolio/5.jpg" class="h-full w-full"  alt="">
+        </div>
+    </div>
+
+     <div class="portfolio-img animated ALL mb-2 Development relative">
+        <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+            <h3 class="font-bold text-xl">Mockup Box</h3>
+            <span class="text-lg">Branding</span>
+        </div>
+        <div class="h-full">
+            <img index=6 src="./img/portfolio/6.jpg" class="h-full w-full"  alt="">
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!--start Experience-->
+<section id="experience" class="text-center mt-16 pb-40 leading-loose " style="background-color: whitesmoke;">
+    <div class="experience-title pt-24">
+        <span class="text-red-500 text-base">Timeline</span>
+        <h3 class="text-3xl font-bold">WORKING EXPERIENCE</h3>
+    </div>
+    <div class="px-2 sm:px-6 md:px-8 lg:px-16 xl:px-40 mx-auto service-cards mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+        <div class="experience-card px-8 py-12 bg-white card-shadow">
+            <div class="text-red-500 leading-normal">
+                <p>2016 - Current</p>
+                <h3 class="mb-4 text-black font-bold text-xl tracking-wider">Lead Designer</h3>
+            </div>
+            <hr class="">
+            <div class="mt-6 font-thin">
+                <p>
+                    We are a leading web development and digital Marketing company, delivering..
+                </p>
+            </div>
+    
+        </div>
+
+        <div class="experience-card px-8 py-12 bg-white card-shadow">
+            <div class="text-red-500 leading-normal">
+                <p>2012 - 2016</p>
+                <h3 class="mb-4 text-black font-bold text-xl tracking-wider">Senior Designer</h3>
+            </div>
+            <hr class="">
+            <div class="mt-6 font-thin">
+                <p>
+                    We are a leading web development and digital Marketing company, delivering..
+                </p>
+            </div>
+    
+        </div>
+
+        <div class="experience-card px-8 py-12 bg-white card-shadow">
+            <div class="text-red-500 leading-normal">
+                <p>2010 - 2012</p>
+                <h3 class="mb-4 text-black font-bold text-xl tracking-wider">Junior Designer</h3>
+            </div>
+            <hr class="">
+            <div class="mt-6 font-thin">
+                <p>
+                    We are a leading web development and digital Marketing company, delivering..
+                </p>
+            </div>
+    
+        </div>
+
+        <div class="experience-card px-8 py-12 bg-white card-shadow">
+            <div class="text-red-500 leading-normal">
+                <p>2009 - 2010</p>
+                <h3 class="mb-4 text-black font-bold text-xl tracking-wider">Mobile App Developer</h3>
+            </div>
+            <hr class="">
+            <div class="mt-6 font-thin">
+                <p>
+                    We are a leading web development and digital Marketing company, delivering..
+                </p>
+            </div>
+    
+        </div>
+
+        <div class="experience-card px-8 py-12 bg-white card-shadow">
+            <div class="text-red-500 leading-normal">
+                <p>2006 - 2009</p>
+                <h3 class="mb-4 text-black font-bold text-xl tracking-wider">Frontend Developer</h3>
+            </div>
+            <hr class="">
+            <div class="mt-6 font-thin">
+                <p>
+                    We are a leading web development and digital Marketing company, delivering..
+                </p>
+            </div>
+    
+        </div>
+
+        <div class="experience-card px-8 py-12 bg-white card-shadow">
+            <div class="text-red-500 leading-normal">
+                <p>2005 - 2006</p>
+                <h3 class="mb-4 text-black font-bold text-xl tracking-wider">Graphic Designer</h3>
+            </div>
+            <hr class="">
+            <div class="mt-6 font-thin">
+                <p>
+                    We are a leading web development and digital Marketing company, delivering..
+                </p>
+            </div>
+    
+        </div>
+    </div>
+
+
+</section>
+
+
+<!--End Experience-->
+
+<!--start statistics-->
+
+<section id="statistics" class="">
+    <div class="overlay2 grid grid-flow-row md:grid-cols-2  lg:grid-cols-4 md:px-16 row-gap-0 h-full text-center py-20">
+        <div class="statistics px-12 py-2 grid grid-flow-row row-gap-6  text-center ">
+                <svg style="color:#ff5e5f;" class="mx-auto w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 2h4v15a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V0h16v2zm0 2v13a1 1 0 0 0 1 1 1 1 0 0 0 1-1V4h-2zM2 2v15a1 1 0 0 0 1 1h11.17a2.98 2.98 0 0 1-.17-1V2H2zm2 8h8v2H4v-2zm0 4h8v2H4v-2zM4 4h8v4H4V4z"/></svg> 
+                <h1 class="font-bold text-white text-2xl">333K</h1>
+                <p class="text-xl" style="color: #6f6f6f;">Lines of Code</p>
+        </div>
+        <div class="statistics px-12 py-2 grid grid-flow-row row-gap-6  text-center ">
+                <svg style="color:#ff5e5f;" class="mx-auto w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M.7 9.3l4.8-4.8 1.4 1.42L2.84 10l4.07 4.07-1.41 1.42L0 10l.7-.7zm18.6 1.4l.7-.7-5.49-5.49-1.4 1.42L17.16 10l-4.07 4.07 1.41 1.42 4.78-4.78z"/></svg> 
+                <h1 class="font-bold text-white text-2xl">333K</h1>
+                <p class="text-xl" style="color: #6f6f6f;">Lines of Code</p>
+        </div>
+        <div class="statistics px-12 py-2 grid grid-flow-row row-gap-6  text-center ">
+                <svg style="color:#ff5e5f;" class="mx-auto w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"/></svg> 
+                <h1 class="font-bold text-white text-2xl">333K</h1>
+                <p class="text-xl" style="color: #6f6f6f;">Lines of Code</p>
+        </div>
+        <div class="statistics px-12 py-2 grid grid-flow-row row-gap-6  text-center ">
+                <svg style="color:#ff5e5f;" class="mx-auto w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M3.94 6.5L2.22 3.64l1.42-1.42L6.5 3.94c.52-.3 1.1-.54 1.7-.7L9 0h2l.8 3.24c.6.16 1.18.4 1.7.7l2.86-1.72 1.42 1.42-1.72 2.86c.3.52.54 1.1.7 1.7L20 9v2l-3.24.8c-.16.6-.4 1.18-.7 1.7l1.72 2.86-1.42 1.42-2.86-1.72c-.52.3-1.1.54-1.7.7L11 20H9l-.8-3.24c-.6-.16-1.18-.4-1.7-.7l-2.86 1.72-1.42-1.42 1.72-2.86c-.3-.52-.54-1.1-.7-1.7L0 11V9l3.24-.8c.16-.6.4-1.18.7-1.7zM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg> 
+                <h1 class="font-bold text-white text-2xl">333K</h1>
+                <p class="text-xl" style="color: #6f6f6f;">Lines of Code</p>
+        </div>
+    </div>
+</section>
+<!--end statistics-->
+
+<!--start members-->
+
+<section id="members" class="text-center mt-20 pb-40 leading-loose " >
+    <div class="members-title pt-16 leading-normal">
+        <span class="text-red-500 text-base">Members</span>
+        <h3 class="text-3xl font-bold">CREATIVE TEAM</h3>
+    </div>
+    <div class="members-images mt-12 py-8 px-4 sm:grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 lg:px-40 gap-12">
+
+        <div class="portfolio-img animated ALL relative card-shadow">
+            <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+                <h3 class="font-bold text-xl">Steve Tylor</h3>
+                <span class="text-lg">Manager</span>
+            </div>
+            <div class="h-full">
+                <img src="./img/members_1.jpg" class="h-full w-full"  alt="">
+            </div>
+        </div>
+        <div class="portfolio-img animated ALL relative card-shadow">
+            <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+                <h3 class="font-bold text-xl">Markus Brooklyn</h3>
+                <span class="text-lg">Web Developer</span>
+            </div>
+            <div class="h-full">
+                <img src="./img/members_2.jpg" class="h-full w-full"  alt="">
+            </div>
+        </div>
+        <div class="portfolio-img animated ALL relative card-shadow">
+            <div class="portfolio-img-overlay leading-relaxed absolute z-999 flex flex-col justify-center items-center text-white left-0 invisible  h-full w-full">
+                <h3 class="font-bold text-xl">Monica Rodriguez</h3>
+                <span class="text-lg">Designer</span>
+            </div>
+            <div class="h-full">
+                <img src="./img/members_3.jpg" class="h-full w-full"  alt="">
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<!--end members-->
+
+<!--start testimonials-->
+<section id="testimonials" class="text-center mt-20 pb-40 leading-loose " style="background-color: #f3f3f3;">
+    <div class="testimonials-title pt-16 leading-normal">
+        <span class="text-red-500 text-base">Testimonials</span>
+        <h3 class="text-3xl font-bold">WHAT CLIENTS SAY?</h3>
+    </div>
+</section>
+
+<!--end testimonials-->
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+
+<!--Modal-->
+<div  x-show="open" class=" modal invisible fixed bottom-0 inset-x-0 px-4 pb-4 sm:inset-0 sm:flex sm:items-center sm:justify-center">
+  <div x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 transition-opacity">
+    <div class=" outside-modal absolute inset-0 bg-gray-500 opacity-75"></div>
+  </div>
+
+  <div x-show="open" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" class="relative bg-transparent rounded-lg px-4 pt-5 pb-4 overflow-hidden  transform transition-all sm:max-w-4xl sm:w-full sm:p-6">
+    <div class="hidden sm:block absolute top-0 right-0 pt-4 pr-4 closebtn">
+      <button @click="open = false; setTimeout(() => open = true, 1000)" type="button" class="text-gray-100 hover:text-gray-500 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
+        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="my-5 mx-3 lightbox-image-div shadow-xl">
+        <img index=1 src="./img/portfolio/1.jpg" class="h-full w-full lightbox-image hidden"  alt="">
+        <img index=2 src="./img/portfolio/2.jpg" class="h-full w-full lightbox-image hidden"  alt="">
+        <img index=3 src="./img/portfolio/3.jpg" class="h-full w-full lightbox-image hidden"  alt="">
+        <img index=4 src="./img/portfolio/4.jpg" class="h-full w-full lightbox-image hidden"  alt="">
+        <img index=5 src="./img/portfolio/5.jpg" class="h-full w-full lightbox-image hidden"  alt="">
+        <img index=6 src="./img/portfolio/6.jpg" class="h-full w-full lightbox-image hidden"  alt="">
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/YouTubePopUp.jquery.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
