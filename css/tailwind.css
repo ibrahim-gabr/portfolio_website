@@ -124,10 +124,10 @@ top: -20%;
 
 #statistics{
     background: url("../img/slider/1.jpg");
-    height: 100vh;
-    background-size: cover;
+    background-size:cover;
     background-position: center center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .overlay2{
@@ -135,20 +135,3 @@ top: -20%;
     min-height: 100%;
 }
 
-@media (min-width:768px )and (max-width:1023px){
-    #statistics{
-        height: 60vh;
-    }
-}
-
-@media (min-width:1024px) and (max-width:1279px){
-    #statistics{
-        height: 40vh;
-    }
-}
-
-@media (min-width:1280px){
-    #statistics{
-        height: 40vh;
-    }
-}
